@@ -24,7 +24,6 @@ public class sherlockAndShares {
     public static int squares(int a, int b) {
         double a1 = Math.floor(Math.sqrt(a));
         double b1 = Math.floor(Math.sqrt(b));
-        
         if(Math.sqrt(a) % 1 == 0)
             a1--;
         return  (int)(b1-a1);
