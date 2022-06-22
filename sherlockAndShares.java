@@ -17,15 +17,14 @@ public class sherlockAndShares {
      */
     public static void main(String[] args) {
         System.out.println(squares(1, 1000000000));
-        double num = Math.floor(99);
-        System.out.println(num);
     }
 
     public static int squares(int a, int b) {
-        double limitUpper = Math.floor(Math.sqrt(b));
-        double limitLower = Math.floor(Math.sqrt(a));
+        double a1 = Math.floor(Math.sqrt(a));
+        double b1 = Math.floor(Math.sqrt(b));
+        
         if(Math.sqrt(a) % 1 == 0)
-            limitLower--;
-        return  (int)(limitUpper-limitLower);
+            a1--;
+        return  (int)(b1-a1);
     }
 }
